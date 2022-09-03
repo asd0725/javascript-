@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        button {
+            color: aquamarine;
+            position: absolute;
+        }
+    </style>
+    <div>
+        <button>homehome</button>
+        <button>houdun</button>
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelectorAll('button');
+    btn.forEach(function (item) {
+        let interval = false
+        item.addEventListener('click', function () {
+            let left = 1;
+            if (!interval) {
+                interval = true
+                setInterval(function () {
+                    item.style.left = left++ + "px"
+                }, 100)
+            }
+        })
+    })
+</script>
+
+</html>
