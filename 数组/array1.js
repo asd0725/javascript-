@@ -27,4 +27,12 @@ let arr2 = Array.from(obj1,(value)=>{
 
 //es6判断一个变量是否为数组
 let a = new Set()
-console.log(Array.isArray(a));
+// console.log(Array.isArray(a));
+
+let arr3 = [1,2,3,4,5,6];
+arr3.splice(2);
+// console.log(arr3);
+
+//数组iindexOf方法
+var array = ['abc', 'def', 'ghi','123'];
+// console.log(array.indexOf('123')); // 1
